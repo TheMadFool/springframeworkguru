@@ -1,4 +1,4 @@
-package com.themadfool.spring5webapp.model.repositories;
+package com.themadfool.spring5webapp.repositories;
 
 import com.themadfool.spring5webapp.model.Author;
 import org.springframework.data.repository.CrudRepository;

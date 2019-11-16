@@ -18,7 +18,6 @@ public class Author {
     private Set<Book> books = new HashSet<>();
 
     public Author() {
-        // not sure what this does?
     }
 
     public Author(String firstName, String lastName) {

@@ -1,4 +1,4 @@
-package com.themadfool.spring5webapp.Model;
+package com.themadfool.spring5webapp.model;
 
 import javax.persistence.*;
 import java.util.HashSet;

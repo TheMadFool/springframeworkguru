@@ -9,7 +9,6 @@ public class Publisher {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long Id;
-    @OneToOne
     private String publisherName;
     private String addressLine1;
     private String addressLine2;
@@ -19,7 +18,7 @@ public class Publisher {
     public Publisher() {
     }
 
-    public Publisher(String addressLine1, String addressLine2, String city, String postCode, String publisherName) {
+    public Publisher(String publisherName, String addressLine1, String addressLine2, String city, String postCode) {
         this.publisherName = publisherName;
         this.addressLine1 = addressLine1;
         this.addressLine2 = addressLine2;
@@ -88,4 +87,15 @@ public class Publisher {
         return Objects.hash(Id);
     }
 
+    @Override
+    public String toString() {
+        return "Publisher{" +
+                "Id=" + Id +
+                ", publisherName='" + publisherName + '\'' +
+                ", addressLine1='" + addressLine1 + '\'' +
+                ", addressLine2='" + addressLine2 + '\'' +
+                ", city='" + city + '\'' +
+                ", postCode='" + postCode + '\'' +
+                '}';
+    }
 }
